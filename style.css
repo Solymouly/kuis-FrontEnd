@@ -1,4 +1,3 @@
-/* === RESET & GLOBAL === */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@ body {
   color: #333;
 }
 
-/* === NAVBAR === */
 header {
   display: flex;
   align-items: center;
@@ -55,7 +53,6 @@ header {
   color: #c8e6c9;
 }
 
-/* === FORM & CARD === */
 main {
   padding: 30px;
 }
@@ -116,7 +113,6 @@ main {
   border: 1px solid #4caf50;
 }
 
-/* === HERO === */
 .hero {
   text-align: center;
   margin-top: 40px;
@@ -130,7 +126,6 @@ main {
   color: #444;
 }
 
-/* === CARD PRODUK === */
 .products {
   display: flex;
   gap: 20px;
@@ -165,7 +160,6 @@ main {
   font-size: 18px;
 }
 
-/* === HISTORI PEMBELIAN === */
 .history {
   margin: 40px auto;
   width: 90%;
@@ -220,7 +214,6 @@ main {
   border-radius: 4px;
 }
 
-/* ===== Histori Pembelian ===== */
 .history {
   margin: 40px auto;
   max-width: 900px;
