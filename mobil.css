@@ -1,0 +1,20 @@
+body {
+  background: #edf5e1; 
+}
+
+.form-container h2 {
+  color: #2e7d32;
+}
+
+.btn {
+  background: #388e3c;
+}
+
+.btn:hover {
+  background: #2c6b2f;
+}
+
+.result-box {
+  border-color: #388e3c;
+  background: #e1f5e0;
+}

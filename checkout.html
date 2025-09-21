@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weHealth | Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Logo weHealth" />
+      </div>
+      <div class="brand">weHealth</div>
+      <div class="nav-container">
+        <nav class="header-nav">
+          <a href="index.html"><i class="bx bx-home"></i> Home</a>
+          <a href="mobil.html" class="active"
+            ><i class="bx bx-car"></i> Mobil</a
+          >
+          <a href="kesehatan.html"
+            ><i class="bx bx-plus-medical"></i> Kesehatan</a
+          >
+          <a href="kejiwaan.html"><i class="bx bx-brain"></i> Jiwa</a>
+        </nav>
+        <div class="auth-nav">
+          <a href="#" id="logoutBtn"><i class="bx bx-log-out"></i> Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Checkout -->
+    <main>
+      <section class="checkout-box">
+        <h2><i class="bx bx-cart"></i> Checkout Asuransi</h2>
+        <table class="checkout-table">
+          <tr>
+            <th>Produk</th>
+            <td id="checkoutProduk">Asuransi Mobil</td>
+          </tr>
+          <tr>
+            <th>Merk Mobil</th>
+            <td id="checkoutMerk">-</td>
+          </tr>
+          <tr>
+            <th>Jenis Mobil</th>
+            <td id="checkoutJenis">-</td>
+          </tr>
+          <tr>
+            <th>Total Premi</th>
+            <td id="checkoutPremi">Rp 0</td>
+          </tr>
+          <tr>
+            <th>Metode Pembayaran</th>
+            <td>
+              <select id="payMethod">
+                <option>Transfer Bank</option>
+                <option>Kartu Kredit</option>
+                <option>E-Wallet</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <button class="btn" id="btnBayar">Bayar Sekarang</button>
+      </section>
+    </main>
+
+    <!-- JS Eksternal -->
+    <script src="checkout.js"></script>
+  </body>
+</html>

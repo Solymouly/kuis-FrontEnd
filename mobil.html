@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asuransi Mobil - weHealth</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobil.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Logo weHealth" />
+      </div>
+      <div class="brand">weHealth</div>
+      <div class="nav-container">
+        <nav class="header-nav">
+          <a href="index.html"><i class="bx bx-home"></i> Home</a>
+          <a href="mobil.html" class="active"
+            ><i class="bx bx-car"></i> Mobil</a
+          >
+          <a href="kesehatan.html"
+            ><i class="bx bx-plus-medical"></i> Kesehatan</a
+          >
+          <a href="kejiwaan.html"><i class="bx bx-brain"></i> Jiwa</a>
+        </nav>
+        <div class="auth-nav">
+          <a href="#" id="logoutBtn"><i class="bx bx-log-out"></i> Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Form -->
+    <main>
+      <div class="form-container">
+        <h2>Asuransi Mobil</h2>
+        <p class="form-desc">
+          Isi data kendaraan Anda untuk menghitung premi asuransi mobil.
+        </p>
+
+        <form id="mobilForm" class="form-box">
+          <div class="form-control">
+            <label for="merk">Merk Mobil</label>
+            <input
+              type="text"
+              id="merk"
+              placeholder="Contoh: Toyota"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="jenis">Jenis Mobil</label>
+            <input type="text" id="jenis" placeholder="Contoh: SUV" required />
+          </div>
+          <div class="form-control">
+            <label for="tahun">Tahun Pembuatan</label>
+            <input
+              type="number"
+              id="tahun"
+              placeholder="Contoh: 2022"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="harga">Harga Mobil (Rp)</label>
+            <input
+              type="number"
+              id="harga"
+              placeholder="Contoh: 250000000"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="foto">Upload Foto Kendaraan</label>
+            <input type="file" id="foto" />
+          </div>
+          <button type="submit" class="btn">Hitung Premi</button>
+        </form>
+
+        <div id="hasil" class="result-box"></div>
+      </div>
+    </main>
+
+    <script src="mobil.js"></script>
+  </body>
+</html>

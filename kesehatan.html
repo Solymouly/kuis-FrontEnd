@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asuransi Kesehatan - weHealth</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="kesehatan.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Logo weHealth" />
+      </div>
+      <div class="brand">weHealth</div>
+      <div class="nav-container">
+        <nav class="header-nav">
+          <a href="index.html"><i class="bx bx-home"></i> Home</a>
+          <a href="mobil.html"><i class="bx bx-car"></i> Mobil</a>
+          <a href="kesehatan.html" class="active"
+            ><i class="bx bx-plus-medical"></i> Kesehatan</a
+          >
+          <a href="kejiwaan.html"><i class="bx bx-brain"></i> Jiwa</a>
+        </nav>
+        <div class="auth-nav">
+          <a href="#" id="logoutBtn"><i class="bx bx-log-out"></i> Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Form -->
+    <main>
+      <div class="form-container">
+        <h2>Asuransi Kesehatan</h2>
+        <p class="form-desc">
+          Isi data diri dan kondisi kesehatan untuk menghitung premi asuransi.
+        </p>
+
+        <form id="formKesehatan" class="form-box">
+          <div class="form-control">
+            <label for="nama">Nama Lengkap</label>
+            <input
+              type="text"
+              id="nama"
+              placeholder="Nama lengkap Anda"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="lahir">Tanggal Lahir</label>
+            <input type="date" id="lahir" required />
+          </div>
+          <div class="form-control">
+            <label for="pekerjaan">Pekerjaan</label>
+            <input
+              type="text"
+              id="pekerjaan"
+              placeholder="Pekerjaan"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="smoke">Merokok?</label>
+            <select id="smoke" required>
+              <option value="0">Tidak</option>
+              <option value="1">Ya</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="hipertensi">Hipertensi?</label>
+            <select id="hipertensi" required>
+              <option value="0">Tidak</option>
+              <option value="1">Ya</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="diabetes">Diabetes?</label>
+            <select id="diabetes" required>
+              <option value="0">Tidak</option>
+              <option value="1">Ya</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Hitung Premi</button>
+        </form>
+
+        <div id="result" class="result-box"></div>
+      </div>
+    </main>
+  </body>
+</html>

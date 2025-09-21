@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weHealth | Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <!-- Logo -->
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Logo weHealth" />
+      </div>
+      <!-- Brand text -->
+      <div class="brand">weHealth</div>
+      <!-- Menu kanan -->
+      <div class="nav-container">
+        <nav class="header-nav">
+          <a href="index.html" class="active"
+            ><i class="bx bx-home"></i> Home</a
+          >
+          <a href="mobil.html"><i class="bx bx-car"></i> Mobil</a>
+          <a href="kesehatan.html"
+            ><i class="bx bx-plus-medical"></i> Kesehatan</a
+          >
+          <a href="kejiwaan.html"><i class="bx bx-brain"></i> Jiwa</a>
+        </nav>
+        <div class="auth-nav" id="auth-nav">
+          <!-- Login / Logout akan diganti via JavaScript -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Konten utama -->
+    <main>
+      <section class="hero">
+        <h1>Selamat Datang di weHealth</h1>
+        <p>Pusat layanan asuransi kesehatan, jiwa, dan kendaraan terpercaya.</p>
+      </section>
+
+      <section class="products">
+        <div class="card">
+          <i class="bx bx-car icon"></i>
+          <h3>Asuransi Mobil</h3>
+          <a href="mobil.html">Lihat Detail</a>
+        </div>
+        <div class="card">
+          <i class="bx bx-plus-medical icon"></i>
+          <h3>Asuransi Kesehatan</h3>
+          <a href="kesehatan.html">Lihat Detail</a>
+        </div>
+        <div class="card">
+          <i class="bx bx-brain icon"></i>
+          <h3>Asuransi Jiwa</h3>
+          <a href="kejiwaan.html">Lihat Detail</a>
+        </div>
+      </section>
+
+      <!-- Histori Pembelian -->
+      <section class="history">
+        <h2><i class="bx bx-receipt"></i> Histori Pembelian</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nama Produk</th>
+              <th>Jenis</th>
+              <th>Tanggal</th>
+              <th>Harga</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="history-body">
+            <tr>
+              <td colspan="5" style="text-align: center">
+                Belum ada histori pembelian
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- Script Eksternal -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asuransi Jiwa - weHealth</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="kejiwaan.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Logo weHealth" />
+      </div>
+      <div class="brand">weHealth</div>
+      <div class="nav-container">
+        <nav class="header-nav">
+          <a href="index.html"><i class="bx bx-home"></i> Home</a>
+          <a href="mobil.html"><i class="bx bx-car"></i> Mobil</a>
+          <a href="kesehatan.html"
+            ><i class="bx bx-plus-medical"></i> Kesehatan</a
+          >
+          <a href="kejiwaan.html" class="active"
+            ><i class="bx bx-brain"></i> Jiwa</a
+          >
+        </nav>
+        <div class="auth-nav">
+          <a href="#" id="logoutBtn"><i class="bx bx-log-out"></i> Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Form -->
+    <main>
+      <div class="form-container">
+        <h2>Asuransi Jiwa</h2>
+        <p class="form-desc">
+          Isi data diri untuk menghitung premi asuransi jiwa Anda.
+        </p>
+
+        <form id="formJiwa" class="form-box">
+          <div class="form-control">
+            <label for="nama">Nama Lengkap</label>
+            <input
+              type="text"
+              id="nama"
+              placeholder="Nama lengkap Anda"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="lahir">Tanggal Lahir</label>
+            <input type="date" id="lahir" required />
+          </div>
+          <div class="form-control">
+            <label for="pertanggungan">Besaran Pertanggungan</label>
+            <select id="pertanggungan" required>
+              <option value="1000000000">Rp1.000.000.000</option>
+              <option value="2000000000">Rp2.000.000.000</option>
+              <option value="3500000000">Rp3.500.000.000</option>
+              <option value="5000000000">Rp5.000.000.000</option>
+              <option value="10000000000">Rp10.000.000.000</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Hitung Premi</button>
+        </form>
+
+        <div id="result" class="result-box"></div>
+      </div>
+    </main>
+  </body>
+</html>
