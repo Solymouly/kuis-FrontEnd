@@ -1,4 +1,3 @@
-// Update header login/logout
 (function updateHeader() {
   const authNav = document.getElementById("auth-nav");
   if (!authNav) return;
