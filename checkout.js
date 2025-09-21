@@ -2,7 +2,6 @@ const premi = localStorage.getItem("premiMobil");
 const merk = localStorage.getItem("merkMobil");
 const jenis = localStorage.getItem("jenisMobil");
 
-// Tampilkan data di halaman
 document.getElementById("checkoutMerk").textContent = merk || "-";
 document.getElementById("checkoutJenis").textContent = jenis || "-";
 document.getElementById("checkoutPremi").textContent = premi
@@ -18,7 +17,7 @@ document.getElementById("btnBayar").addEventListener("click", function () {
     tanggal: new Date().toLocaleString("id-ID"),
     harga: parseFloat(premi) || 0,
     status: "Lunas",
-    metode: metode, // simpan metode juga
+    metode: metode, 
   };
 
   let histori = JSON.parse(localStorage.getItem("weHealth_histori")) || [];
